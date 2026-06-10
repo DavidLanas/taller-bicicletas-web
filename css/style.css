@@ -1,2 +1,45 @@
-/* estilos b�sicos */
-body { font-family: Arial, sans-serif; margin: 16px; }
+/* Copilot: Estilos personalizados para taller de bicicletas con contraste AA */
+:root {
+  --color-bici: #2c5f2d;   /* verde oscuro */
+  --color-fondo-claro: #f9f9f9;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mejora contraste: texto sobre fondo oscuro */
+.bg-dark, footer {
+  background-color: var(--color-bici) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-bici);
+  border-color: var(--color-bici);
+}
+
+/* Foco visible para navegación por teclado (accesibilidad) */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid #ff9900;
+  outline-offset: 3px;
+}
+
+/* Espaciado y márgenes personalizados */
+.card {
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Diseño responsivo adicional (por si acaso) */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+}
+
+
+/* Copilot generó la regla de foco visible y la paleta de colores con contraste */
